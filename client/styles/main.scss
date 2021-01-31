@@ -1,202 +1,224 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
 
+$user-color: #f90;
 
 body {
-    background-color: #f0f2f5;
-    font-family: 'Poppins', sans-serif;
+  background-color: #f0f2f5;
+  font-family: "Poppins", sans-serif;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
 }
 
 .header-home {
-    background-color: #fff;
+  background-color: #fff;
 }
-
-.product-list {
-    .item {
-        background-color: #fff;
-        border-radius: 10px;
-        margin-bottom: 20px;
-        padding: 20px;
-        text-align: center;
-
-
-        img {
-            margin-bottom: 10px;
-            border-radius: 5px;
-        }
-    }
-}
-
-
 
 // PROFILE - CATALOGO
 
-.header-profile {
-    background-color: #f90;
+.product-list {
+  .item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
     text-align: center;
-    padding: 2rem 0 6rem;
+
+    .title-product {
+      text-transform: uppercase;
+      font-size: 16px;
+      color: #777777;
+    }
+
+    .price-product {
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    .btn-comprar {
+      background-color: $user-color;
+      color: #ffffff;
+      padding: 15px 25px;
+      border-radius: 5px;
+      display: inline-block;
+      transition: all ease 0.2s;
+
+      &:hover {
+        text-decoration: none;
+        background-color: darken($color: #ec8e00, $amount: 0);
+      }
+    }
+
+    img {
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+  }
+}
+
+.header-profile {
+  background-color: $user-color;
+  text-align: center;
+  padding: 2rem 0 6rem;
 }
 
 .hero-profile {
+  margin-top: -4rem;
+  margin-bottom: 30px;
 
-    margin-top: -4rem;
-    margin-bottom: 30px;
+  .content {
+    background-color: #fff;
+    border-radius: 0.8rem;
+    text-align: center;
+    padding: 30px;
 
-    .content {
-        background-color: #fff;
-        border-radius: .80rem;
-        text-align: center;
-        padding: 30px;
-
-        p {
-            max-width: 700px;
-            margin: 0 auto;
-            margin-bottom: 30px;
-        }
-
-
-        ul {
-            margin: 0;
-            padding: 0;
-
-            li {
-                list-style: none;
-                display: inline-block;
-
-                a {
-                    padding: 15px 25px;
-                }
-            }
-        }
+    p {
+      max-width: 700px;
+      margin: 0 auto;
+      margin-bottom: 30px;
     }
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style: none;
+        display: inline-block;
+
+        a {
+          padding: 15px 25px;
+          color: $user-color;
+        }
+      }
+    }
+  }
 }
 
 footer {
-    text-align: center;
-    padding: 40px 0px 30px;
-    background-color: #fff;
-    margin-top: 40px;
+  text-align: center;
+  padding: 40px 0px 30px;
+  background-color: #fff;
+  margin-top: 40px;
 }
-
 
 // LOGIN
 
 .login {
-    height: 100vh;
-    form {
-        background-color: #fff;
-        max-width: 500px;
-        margin: 0 auto;
-        padding: 30px;
-        border-radius: 10px;
+  height: 100vh;
+  form {
+    background-color: #fff;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
 
-        a {
-            color: #303030;
-            font-size: 14px;
-            margin-top: 15px;
-            display: inline-block;
-        }
+    a {
+      color: #303030;
+      font-size: 14px;
+      margin-top: 15px;
+      display: inline-block;
     }
+  }
+}
+
+.footer-credits {
+  color: $user-color;
+
+  &:hover {
+    color: $user-color;
+    text-decoration: none;
+  }
 }
 
 .footer-login {
-    ul {
-        margin: 0;
-        padding: 0;
-        margin-bottom: 30px;
+  ul {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
 
-        li {
-            list-style: none;
-            display: inline-block;
+    li {
+      list-style: none;
+      display: inline-block;
 
-            a {
-                padding: 10px 25px;
-                color: #e1e1e1;
-                transition: all ease .2s;
+      a {
+        padding: 10px 25px;
+        color: #e1e1e1;
+        transition: all ease 0.2s;
 
-                &:hover {
-                    text-decoration: none;
-                    color: #707070;
-                }
-            }
+        &:hover {
+          text-decoration: none;
+          color: #707070;
         }
+      }
     }
+  }
 }
 
-
-
-
 @media only screen and (max-width: 992px) {
-
-    header {
-        img {
-            width: 120px;
-        }
-    }
-
-    
-
-    .catalog {
-
-        .row {
-            padding: 0px 15px;
-            .col-6 {
-                padding-left: 5px;
-                padding-right: 5px;
-            }
-        }
-    }
-
-    footer {
-        margin-top: 10px;
+  header {
+    img {
+      width: 120px;
     }
   }
-  
 
-  @media only screen and (max-width: 768px) {
-
-
-    .hero-profile {
-
-
-        ul {
-            li {
-
-                width: 100%;
-                padding: 0px 0px;
-                margin-bottom: 10px;
-
-                a {
-                width: 100%;
-                padding: 15px 30px;
-                display: inline-block;
-                border: 1px solid #f90;
-                border-radius: 8px;
-                }
-            }
-        }
+  .catalog {
+    .row {
+      padding: 0px 15px;
+      .col-6 {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
     }
-
-
-
   }
 
-
-  @media only screen and (max-width: 400px) {
-
-    .cta-link {
-        i {
-            display: none;
-        }
-    }
-
+  footer {
+    margin-top: 10px;
   }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-profile {
+    ul {
+      li {
+        width: 100%;
+        padding: 0px 0px;
+        margin-bottom: 10px;
+
+        a {
+          width: 100%;
+          padding: 15px 30px;
+          display: inline-block;
+          border: 1px solid #f90;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .cta-link {
+    i {
+      display: none;
+    }
+  }
+}
